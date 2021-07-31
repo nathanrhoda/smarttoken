@@ -48,14 +48,12 @@ contract NateToken {
     // Transfer the balance from owner's account to another account
     // Decreases the balance of  "from" account
     // Increases the balance of "to" account
-    // Emits Transfer event
-    function transfer(address to, uint tokens) public returns (bool success) {
+    // Emits Transfer event   
+    function transfer(address to, uint tokens) public returns (bool success) { 
+        require(tokens <= balances[msg.sender]); 
         balances[msg.sender] = balances[msg.sender] - tokens;
-        balances[to] = balances[to] + tokens;
-        emit transfer(msg.sender, to, token);
-        return true;
-    }
-    
+        balances[to] = balances[to] + tokens; 
+        emit Transfer(msg.sender, to, tokens); return true; }
     
     // Send amounts of tokens from address `from` to address `to`
     // The transferFrom method is used to allow contracts to spender

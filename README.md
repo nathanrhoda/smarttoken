@@ -10,6 +10,7 @@ Creating my ERC20 Token
 
 
 # Implementing a smart contract using Openzeppelin classes
-1. truffle init
-2. npm install truffle-hdwallet-provider 
-3. npm install openzeppelin-solidity
+1. npm install -g truffle
+2. truffle init
+3. npm install truffle-hdwallet-provider 
+4. npm install openzeppelin-solidity

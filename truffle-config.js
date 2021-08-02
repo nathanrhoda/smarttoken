@@ -18,13 +18,17 @@
  *
  */
 
-//const HDWalletProvider = require('@truffle/hdwallet-provider');
+const HDWalletProvider = require('@truffle/hdwallet-provider');
 //
 // const fs = require('fs');
-const infuraKey = "<Infura Key>";
+const infuraKey = "<Infura Key>"
 
 // local gnache key
-const mnemonic = "then cousin raven depart exchange viable siege belt bronze alien cheap judge";
+//const mnemonic = "then cousin raven depart exchange viable siege belt bronze alien cheap judge";
+
+// rinkeby
+const mnemonic = "<Mnemonic>";
+
 
 module.exports = {
   /**
@@ -49,7 +53,8 @@ module.exports = {
       },
       network_id: '4',
       gas: 4500000,
-      gasPrice: 10000000000      
+      gasPrice: 10000000000,
+      // from: '0x639eB9164E65dE52a958E833f1E9857BC3d85E40'      
     }    
     // Useful for testing. The `development` name is special - truffle uses it by default
     // if it's defined here and no other network is specified at the command line.

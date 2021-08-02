@@ -14,3 +14,6 @@ Creating my ERC20 Token
 2. truffle init
 3. npm install truffle-hdwallet-provider 
 4. npm install openzeppelin-solidity
+
+
+5. To deploy to rinkeby `truffle migrate --network rinkeby`
